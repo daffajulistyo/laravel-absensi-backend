@@ -21,5 +21,17 @@ class DatabaseSeeder extends Seeder
             'email' => 'daffa@example.com',
             'password' => Hash::make('12345678')
         ]);
+
+        // data dummy for company
+        \App\Models\Company::create([
+            'name' => 'PT. Daffa',
+            'email' => 'julistyo@daffa.com',
+            'address' => 'Jl. Raya Kedung Turi No. 20, Sleman, DIY',
+            'latitude' => '-7.747033',
+            'longitude' => '110.355398',
+            'radius_km' => '0.5',
+            'time_in' => '08:00',
+            'time_out' => '17:00',
+        ]);
     }
 }
